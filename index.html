@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <title>PlanR</title>
+  <meta name="description" content="PlanR — szef sztabu Twojego życia. 7 gałęzi, 1 rytm, 1 postać." />
+
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="theme-color" content="#020617" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="PlanR" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- Style -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    html, body, #root { height: 100%; }
+    body { margin: 0; background: #020617; font-family: "Inter", system-ui, sans-serif; -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
+    .font-serif { font-family: "Fraunces", Georgia, serif; }
+    ::-webkit-scrollbar { width: 0; background: transparent; }
+  </style>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { serif: ['Fraunces', 'serif'] } } } };
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
